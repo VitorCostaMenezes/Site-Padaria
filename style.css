@@ -1,0 +1,174 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+@font-face {
+      font-family: "Padkova";
+      src: url("font/Podkova-VariableFont_wght.woff");
+    }
+
+
+
+ body{
+	background: #e5cf94;
+	font-family: "Padkova";
+}
+
+
+
+/* -----------------------  BARRA SUPERIOR  ----------------------- */
+
+#superior{
+	grid-area: superior;
+	width: 100%;
+	background: #311b02;
+	height: 20px;
+}
+
+
+
+/* -----------------------  ASIDE  ----------------------- */
+
+aside{
+
+	grid-area: aside;
+	
+}
+
+
+span#regras{
+	background: #fff;
+	margin: 10px;
+	padding: 20px 20px 10px 30px;
+	display: block;
+}
+
+aside h4{
+	color:#663300; 
+	margin-left: -15px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+/* -----------------------  MAIN  ----------------------- */
+
+main {
+	grid-area: main;
+	background: #fff;
+	margin: 10px;
+	padding: 20px 20px 20px 10px;
+}
+
+main h4{
+	color:#663300; 
+	margin-left: 10px;
+	font-weight: bold;
+}
+ main h3 {
+ 	text-transform: uppercase;
+ 	font-size: 0.95em;
+ }
+
+main ul li{
+	list-style: none;
+	margin-top: 10px;
+	padding: 10px;
+}
+
+#final-list{
+	background: #ededed;
+	border: 2px dashed #000;
+}
+
+
+
+/* -----------------------  HEADER  ----------------------- */
+
+#lado-esquerdo{
+	grid-area: esquerdo;
+	padding: 50px 30px 40px 30px;
+	height:150px;
+
+}
+
+/* -----------------------  lISTA LADO DIREITO (regras)  ----------------------- */
+
+
+#lado-direito{
+		grid-area: direito;
+		color:#663300;
+	 	font-weight: bold;
+
+	}
+
+		#lado-esquerdo p {
+	 	text-align: center;
+	}
+
+/* -----------------------  BREAKPOINTS  ----------------------- */
+
+
+
+@media screen and (max-width: 767.98px) { 
+
+
+	#container {
+	display: grid;
+	max-width: 975px;
+	margin: 0 auto;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-areas: 'superior superior superior superior'
+						 'esquerdo esquerdo esquerdo esquerdo '
+						 'direito direito direito direito'
+						 'aside aside aside aside'
+						 'main main main main'
+						 
+		}
+
+
+	#lado-direito p {
+	 	text-align: center;
+	 	margin-bottom: 15px;
+	}
+
+	#lado-esquerdo{
+	margin: 0 auto;
+	}
+
+
+}
+
+
+
+
+@media screen and (min-width: 768px) { 
+
+	#container {
+	display: grid;
+	max-width: 975px;
+	margin: 0 auto;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-areas: 'superior superior superior superior'
+						 'esquerdo esquerdo direito direito '
+						 'aside main main main'
+						 
+		}
+
+	#lado-direito{
+	 	margin-right: auto;
+	 	height: 150px;
+	 	line-height: 200px;
+		padding: 40px 40px;
+	}
+
+	#lado-esquerdo{
+	margin-left: auto;
+	}
+
+
+
+
+}
+
+
