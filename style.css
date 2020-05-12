@@ -76,6 +76,13 @@ main ul li{
 	padding: 10px;
 }
 
+.li-item{
+	list-style: none;
+	margin-top: 10px;
+	padding: 10px;
+}
+ 
+
 #final-list{
 	background: #ededed;
 	border: 2px dashed #000;
