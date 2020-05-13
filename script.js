@@ -17,8 +17,8 @@ function mapear() {
     ul.setAttribute('data-key', index);
 
     ul.querySelector('.item-nome').innerHTML = item.name;
-    ul.querySelector('.item-qt').innerHTML = `Quantidade:  ${item.amount}`;
-
+    ul.querySelector('.item-qt').innerHTML = `Quantidade:  ${item.amount} <br> Total a pagar: <strong> R$ ${(item.amount * 0.30).toFixed(2)}</strong>`;
+                                                            //foi inserida acima um código para apresentar o total a pagar pela quantidade pães
 
     c('.fila-area').append(ul);
   })
