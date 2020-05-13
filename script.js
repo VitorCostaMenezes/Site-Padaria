@@ -140,7 +140,6 @@ while(indice >= 0){
 }
 */
 
-
 /*
 
 let nome;
@@ -206,8 +205,97 @@ function desaparecer () {
 } 
 
 
+// ---------------- incuindo a API METAWEATHER-------------------------------
+
+const url = "https://cors-anywhere.herokuapp.com/https://www.metaweather.com/api/location/455826/";
+
+fetch(url)
+
+   .then(resposta => resposta.json())
+   .then(json => carregaTempo(json));
+
+
+
+function carregaTempo(json){
+  console.log(json);
+
+  let {consolidated_weather} = json;
+
+  c('#localidade').innerHTML = `${json.title}`;
+  c('#nome-tempo').innerHTML = `${consolidated_weather[0].weather_state_name}` ;
+  c('#img').src = `https://www.metaweather.com/static/img/weather/${consolidated_weather[0].weather_state_abbr}.svg` ;
+  c('#temperatura').innerHTML = `Temperatura: ${consolidated_weather[0].the_temp.toFixed(0)}°`;
+  c('#min-temp').innerHTML = `Mínima: ${consolidated_weather[0].min_temp.toFixed(0)}°`;
+  c('#max-temp').innerHTML = `Máxima: ${consolidated_weather[0].max_temp.toFixed(0)}°`;
+
+
+ console.log(json.title);
+ console.log(consolidated_weather[0].weather_state_name);
+ console.log(consolidated_weather[0].weather_state_abbr);
+ console.log(consolidated_weather[0].the_temp);
+ console.log(consolidated_weather[0].min_temp);
+ console.log(consolidated_weather[0].max_temp);
+
+}
+
+
+//--------------------------------INCLUINDO UM DATE --------------------------------------------
+
+const h2 = c('#data');
+const data2 = new Date();
+const opcoes = {
+    dateStyle: 'full',
+};
+  h2.innerHTML = data2.toLocaleDateString('pt-BR', opcoes);
 
 
 
 
 
+
+
+
+
+   /*
+fetch("https://cors-anywhere.herokuapp.com/https://www.metaweather.com/api/location/455826/")
+  .then( response => {
+    if (!response.ok) { throw response }
+    return response.json()  //we only get here if there is no error
+  })
+  .then( json => {
+    this.props.dispatch(doSomethingWithResult(json)) 
+  })
+  .catch( err => {
+    err.text().then( errorMessage => {
+      this.props.dispatch(displayTheError(errorMessage))
+    })
+  })
+
+*/
+
+
+ /*
+function exibir(valor) {
+  console.log(valor);
+}
+
+   axios('teste.json')
+   .then(resposta => exibir(resposta.data) );
+   */
+
+ // const axios = require('https://unpkg.com/axios/dist/axios.min.js');
+
+  /* Make a request for a user with a given ID
+  axios.get('https://www.metaweather.com/api/location/455826/')
+    .then(function (response) {
+      // handle success
+      console.log(response);
+    })
+    .catch(function (error) {
+      // handle error
+      console.log(error);
+    })
+    .then(function () {
+      // always executed
+    });
+    */

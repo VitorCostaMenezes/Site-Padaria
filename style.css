@@ -23,7 +23,9 @@
 	grid-area: superior;
 	width: 100%;
 	background: #311b02;
-	height: 20px;
+	height: 50px;
+	padding: 5px 0 0 10px; 
+	position: fixed;
 }
 
 
@@ -55,9 +57,10 @@ aside h4{
 
 main {
 	grid-area: main;
-	background: #fff;
+	background: #ededed;
 	margin: 10px;
 	padding: 20px 20px 20px 10px;
+	border-radius: 5px;
 }
 
 main h4{
@@ -82,12 +85,12 @@ main ul li{
 	padding: 10px;
 }
  
-
+/*
 #final-list{
 	background: #ededed;
 	border: 2px dashed #000;
 }
-
+*/
 
 
 /* -----------------------  HEADER  ----------------------- */
@@ -106,7 +109,6 @@ main ul li{
 		grid-area: direito;
 		color:#663300;
 	 	font-weight: bold;
-
 	}
 
 		#lado-esquerdo p {
@@ -124,6 +126,7 @@ main ul li{
 	display: grid;
 	max-width: 975px;
 	margin: 0 auto;
+	padding-top: 50px;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 	grid-template-areas: 'superior superior superior superior'
 						 'esquerdo esquerdo esquerdo esquerdo '
@@ -143,10 +146,7 @@ main ul li{
 	margin: 0 auto;
 	}
 
-
 }
-
-
 
 
 @media screen and (min-width: 768px) { 
@@ -155,6 +155,7 @@ main ul li{
 	display: grid;
 	max-width: 975px;
 	margin: 0 auto;
+	padding-top: 50px;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 	grid-template-areas: 'superior superior superior superior'
 						 'esquerdo esquerdo direito direito '
@@ -173,9 +174,85 @@ main ul li{
 	margin-left: auto;
 	}
 
+}
 
+/*
+	Formatando a previsão do tempo ---------------------------------
+*/
 
+.formata-tempo{
+	color: #fff;
+	font-size: 11px;
+	margin: 0 auto;
+	padding: 4px 0 0 5px;
+	display: inline-block;
+}
 
+#data{
+	display: inline-block;
+	color: #fff;
+	font-size: 13px;
+	margin: 0 auto;
+	padding: 5px 0 0 5px;
+	text-transform: capitalize;
 }
 
 
+/*
+	Formatando ons imputs ---------------------------------
+*/
+ input.fila-pad {
+	
+	width: 90%;
+	border-radius: 6px;
+	height: 30px;
+	padding: 05px 10px;
+	margin-bottom: 5px;
+	margin-top: 5px;
+	font-size: 1rem;
+	background: #d9d9d9;
+	
+}
+
+.inserir-fila{
+	width: 83%;
+	float: left;
+	border-radius: 5px;
+	margin-left: 10px;	
+}
+
+
+.btn-enviar {
+	display: block;
+	width: 100%;
+	margin-top: -15px;	
+}
+
+#btn-enviar {
+	display: flex;
+	width: 14%;
+	
+	height: 95px;
+	border-radius: 5px;
+	border: 4px solid #311b02;
+	color: #663300 ;
+	background: #e5cf94;
+	font-family: "Padkova";
+	font-size: 1.2rem;
+	text-align: center;
+	font-weight: bold;
+	padding: 0 5px 0 0;
+}
+
+#btn-enviar span{
+	margin: 0 auto;
+}
+
+
+#btn-enviar:hover {
+	cursor: pointer;
+	background: #663300 ;
+	color: #fff ;
+	
+	
+}

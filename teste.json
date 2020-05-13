@@ -1,0 +1,159 @@
+{
+    "consolidated_weather": [
+        {
+            "id": 6545211775778816,
+            "weather_state_name": "Heavy Rain",
+            "weather_state_abbr": "hr",
+            "wind_direction_compass": "S",
+            "created": "2020-05-13T13:40:54.317608Z",
+            "applicable_date": "2020-05-13",
+            "min_temp": 23.54,
+            "max_temp": 28.1,
+            "the_temp": 28.95,
+            "wind_speed": 6.377347092977014,
+            "wind_direction": 170.5,
+            "air_pressure": 1013.0,
+            "humidity": 75,
+            "visibility": 6.714537103316631,
+            "predictability": 77
+        },
+        {
+            "id": 6538441430925312,
+            "weather_state_name": "Heavy Rain",
+            "weather_state_abbr": "hr",
+            "wind_direction_compass": "SSE",
+            "created": "2020-05-13T13:40:57.329679Z",
+            "applicable_date": "2020-05-14",
+            "min_temp": 22.775,
+            "max_temp": 28.365000000000002,
+            "the_temp": 28.86,
+            "wind_speed": 3.9860808876163207,
+            "wind_direction": 168.5,
+            "air_pressure": 1012.0,
+            "humidity": 77,
+            "visibility": 9.999726596675416,
+            "predictability": 77
+        },
+        {
+            "id": 6294339246358528,
+            "weather_state_name": "Showers",
+            "weather_state_abbr": "s",
+            "wind_direction_compass": "SSE",
+            "created": "2020-05-13T13:41:00.324358Z",
+            "applicable_date": "2020-05-15",
+            "min_temp": 23.015,
+            "max_temp": 30.045,
+            "the_temp": 31.46,
+            "wind_speed": 3.56825817227392,
+            "wind_direction": 148.0,
+            "air_pressure": 1011.0,
+            "humidity": 71,
+            "visibility": 9.999726596675416,
+            "predictability": 73
+        },
+        {
+            "id": 5781728322912256,
+            "weather_state_name": "Showers",
+            "weather_state_abbr": "s",
+            "wind_direction_compass": "SSE",
+            "created": "2020-05-13T13:41:03.427674Z",
+            "applicable_date": "2020-05-16",
+            "min_temp": 23.43,
+            "max_temp": 29.93,
+            "the_temp": 31.36,
+            "wind_speed": 4.480447784935974,
+            "wind_direction": 152.5,
+            "air_pressure": 1010.0,
+            "humidity": 70,
+            "visibility": 9.999726596675416,
+            "predictability": 73
+        },
+        {
+            "id": 4872699971108864,
+            "weather_state_name": "Showers",
+            "weather_state_abbr": "s",
+            "wind_direction_compass": "SSE",
+            "created": "2020-05-13T13:41:06.360132Z",
+            "applicable_date": "2020-05-17",
+            "min_temp": 23.595,
+            "max_temp": 30.165,
+            "the_temp": 31.33,
+            "wind_speed": 5.975203809751053,
+            "wind_direction": 161.0,
+            "air_pressure": 1011.0,
+            "humidity": 69,
+            "visibility": 9.999726596675416,
+            "predictability": 73
+        },
+        {
+            "id": 5603668105625600,
+            "weather_state_name": "Heavy Rain",
+            "weather_state_abbr": "hr",
+            "wind_direction_compass": "SSE",
+            "created": "2020-05-13T13:41:09.432225Z",
+            "applicable_date": "2020-05-18",
+            "min_temp": 23.744999999999997,
+            "max_temp": 30.64,
+            "the_temp": 32.93,
+            "wind_speed": 7.164762188817307,
+            "wind_direction": 149.5,
+            "air_pressure": 1011.0,
+            "humidity": 68,
+            "visibility": 9.999726596675416,
+            "predictability": 77
+        }
+    ],
+    "time": "2020-05-13T10:47:07.814598-03:00",
+    "sun_rise": "2020-05-13T05:44:27.753801-03:00",
+    "sun_set": "2020-05-13T17:16:08.789205-03:00",
+    "timezone_name": "LMT",
+    "parent": {
+        "title": "Brazil",
+        "location_type": "Country",
+        "woeid": 23424768,
+        "latt_long": "-14.242920,-54.387829"
+    },
+    "sources": [
+        {
+            "title": "BBC",
+            "slug": "bbc",
+            "url": "http://www.bbc.co.uk/weather/",
+            "crawl_rate": 360
+        },
+        {
+            "title": "Forecast.io",
+            "slug": "forecast-io",
+            "url": "http://forecast.io/",
+            "crawl_rate": 480
+        },
+        {
+            "title": "HAMweather",
+            "slug": "hamweather",
+            "url": "http://www.hamweather.com/",
+            "crawl_rate": 360
+        },
+        {
+            "title": "OpenWeatherMap",
+            "slug": "openweathermap",
+            "url": "http://openweathermap.org/",
+            "crawl_rate": 360
+        },
+        {
+            "title": "Weather Underground",
+            "slug": "wunderground",
+            "url": "https://www.wunderground.com/?apiref=fc30dc3cd224e19b",
+            "crawl_rate": 720
+        },
+        {
+            "title": "World Weather Online",
+            "slug": "world-weather-online",
+            "url": "http://www.worldweatheronline.com/",
+            "crawl_rate": 360
+        }
+    ],
+    "title": "Salvador",
+    "location_type": "City",
+    "woeid": 455826,
+    "latt_long": "-12.97002,-38.504559",
+    "timezone": "America/Sao_Paulo"
+}

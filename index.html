@@ -11,7 +11,27 @@
     <body style="align-self: center;"> 
 
 
-    	<div id="superior"></div>
+		<div style="color: #ffff;" id="superior">
+			
+			<h4 style="display: inline; padding-left: 5px;"> Previsão do tempo: </h4>
+
+			<span  id="data"></span>
+			<br>
+
+			<span class="formata-tempo"  id="localidade"></span>
+
+			<span class="formata-tempo" id="nome-tempo"></span>
+			
+			<span style="padding-left: 0;" class="formata-tempo"><img id="img" style="width: 18px;" src="" alt=""></span>
+
+			<span class="formata-tempo" id="temperatura"></span>
+
+			<span class="formata-tempo" id="min-temp"></span>
+
+			<span class="formata-tempo" id="max-temp"></span>
+
+			
+		</div>
 
 		<div id="container"><!-- INICIO DA DIV CONTAINER -->
 
@@ -42,7 +62,9 @@
 		    		
 				</aside>
 				
+				
 
+				
 <!-- ---------------------------- modelo do clone  ---------------------------------- -->
 
 			<ul style="display: none;">
@@ -66,20 +88,27 @@
 
 					<ul>
 		    			<li id="final-list">
-							<input id="name" type="text" placeholder="DIGITE SEU NOME"><br>
-							<input esvaziar() id="qt" type="text" placeholder="Quantidade"><br>
-
-							<button  id="btn-enviar">Quero Pão</button>
-		    				
-		    				
-		    			</li>
+						</li>
 		    		</ul>
+
+						<div class="inserir-fila">
+							<input class="fila-pad" id="name" type="text" placeholder="DIGITE SEU NOME">
+							<input style="margin-bottom:0 ;" class="fila-pad"esvaziar() id="qt" type="text" placeholder="Quantidade">
+						</div>	
+
+						<br>
+						<div class="btn-enviar"><button  id="btn-enviar"><span>Quero Pão</span></button></div>	
+		    				
+		    				
+		    		
 		    	</main>
 
 	</div><!-- FINAL DA DIV CONTAINER -->		
 
 
-<!--	<script src="./json.js"></script>						   -->
+<!--	<script src="./json.js"></script>		<script src="https://unpkg.com/axios/dist/axios.min.js"></script>				   -->
+
+
 	
 	<script src="./script.js"></script>
 	
