@@ -8,13 +8,10 @@
       src: url("font/Podkova-VariableFont_wght.woff");
     }
 
-
-
  body{
 	background: #e5cf94;
 	font-family: "Padkova";
 }
-
 
 
 /* -----------------------  BARRA SUPERIOR  ----------------------- */
@@ -26,24 +23,21 @@
 	height: 50px;
 	padding: 5px 0 0 10px; 
 	position: fixed;
+	opacity: 0.7;
 }
-
-
 
 /* -----------------------  ASIDE  ----------------------- */
 
 aside{
-
-	grid-area: aside;
-	
+	grid-area: aside;		
 }
-
 
 span#regras{
 	background: #fff;
 	margin: 10px;
 	padding: 20px 20px 10px 30px;
 	display: block;
+	border-radius: 5px;
 }
 
 aside h4{
@@ -68,6 +62,7 @@ main h4{
 	margin-left: 10px;
 	font-weight: bold;
 }
+
  main h3 {
  	text-transform: uppercase;
  	font-size: 0.95em;
@@ -85,25 +80,16 @@ main ul li{
 	padding: 10px;
 }
  
-/*
-#final-list{
-	background: #ededed;
-	border: 2px dashed #000;
-}
-*/
-
 
 /* -----------------------  HEADER  ----------------------- */
 
 #lado-esquerdo{
 	grid-area: esquerdo;
 	padding: 50px 30px 40px 30px;
-	height:150px;
-
+	height:150px;	
 }
 
 /* -----------------------  lISTA LADO DIREITO (regras)  ----------------------- */
-
 
 #lado-direito{
 		grid-area: direito;
@@ -117,10 +103,7 @@ main ul li{
 
 /* -----------------------  BREAKPOINTS  ----------------------- */
 
-
-
 @media screen and (max-width: 767.98px) { 
-
 
 	#container {
 	display: grid;
@@ -136,7 +119,6 @@ main ul li{
 						 
 		}
 
-
 	#lado-direito p {
 	 	text-align: center;
 	 	margin-bottom: 15px;
@@ -144,10 +126,12 @@ main ul li{
 
 	#lado-esquerdo{
 	margin: 0 auto;
+	
 	}
 
 }
 
+/* -------------------------------------------------------------- */
 
 @media screen and (min-width: 768px) { 
 
@@ -176,9 +160,7 @@ main ul li{
 
 }
 
-/*
-	Formatando a previsão do tempo ---------------------------------
-*/
+/* --------------   Formatando a previsão do tempo --------------------------------- */
 
 .formata-tempo{
 	color: #fff;
@@ -198,9 +180,7 @@ main ul li{
 }
 
 
-/*
-	Formatando ons imputs ---------------------------------
-*/
+/* -----------------	Formatando os imputs --------------------------------- */
  input.fila-pad {
 	
 	width: 90%;
@@ -211,7 +191,6 @@ main ul li{
 	margin-top: 5px;
 	font-size: 1rem;
 	background: #d9d9d9;
-	
 }
 
 .inserir-fila{
@@ -221,17 +200,15 @@ main ul li{
 	margin-left: 10px;	
 }
 
-
 .btn-enviar {
 	display: block;
 	width: 100%;
-	margin-top: -15px;	
+	margin-top: -10px;	
 }
 
 #btn-enviar {
 	display: flex;
 	width: 14%;
-	
 	height: 95px;
 	border-radius: 5px;
 	border: 4px solid #311b02;
@@ -248,11 +225,8 @@ main ul li{
 	margin: 0 auto;
 }
 
-
 #btn-enviar:hover {
 	cursor: pointer;
 	background: #663300 ;
-	color: #fff ;
-	
-	
+	color: #fff ;	
 }

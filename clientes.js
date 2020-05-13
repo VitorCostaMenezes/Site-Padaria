@@ -13,6 +13,7 @@ let cliente = [
     },
     {
       name: "Andressa Silva",
-      amount: 30,
+      amount: 27,
     },
   ];
+
