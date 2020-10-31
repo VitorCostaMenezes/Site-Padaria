@@ -103,6 +103,7 @@ function desaparecer() {
 
     } else {
       parar();
+      mapear();
     }
   }, 10000);
 }
@@ -120,6 +121,7 @@ fetch(url)
 function carregaTempo(json) {
 
   let { consolidated_weather } = json;
+  
 
   c('#localidade').innerHTML = `${json.title}`;
   c('#nome-tempo').innerHTML = `${consolidated_weather[0].weather_state_name}`;
